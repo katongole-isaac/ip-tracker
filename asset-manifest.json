@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/ip-tracker/static/css/main.e48b5140.css",
+    "main.js": "/ip-tracker/static/js/main.f2e72c92.js",
+    "static/media/pattern-bg-desktop.png": "/ip-tracker/static/media/pattern-bg-desktop.5013c4f570ecf757f855.png",
+    "index.html": "/ip-tracker/index.html",
+    "main.e48b5140.css.map": "/ip-tracker/static/css/main.e48b5140.css.map",
+    "main.f2e72c92.js.map": "/ip-tracker/static/js/main.f2e72c92.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e48b5140.css",
+    "static/js/main.f2e72c92.js"
+  ]
+}
