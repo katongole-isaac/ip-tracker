@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+
+/* 
+ Main Css file for the App.
+
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root {
+  --app-header-height: 35vh
+}
+body {
+  font-family: 'Rubik', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.call-to-action {
+  background: linear-gradient(90deg, rgba(131,58,180,1) 8%, rgba(253,29,29,1) 67%, rgba(252,69,249,1) 99%); 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+.app-header {
+  background-image: url('./images/pattern-bg-desktop.png');
+  min-height: var(--app-header-height);
+}
+
+.card-column {
+  border-right: 1px solid grey !important;
+}
+
+.card {
+  /* min-height: 15vh; */
+  height: 100%;
+  min-height: 100%;
+}
+
+.ip-details {
+  z-index: 990;
+  position: absolute;
+  top: 15rem;
+  min-height: 22vh;
+  letter-spacing: .01rem;
+}
+
+.ip-card-wrapper {
+  max-width: 1200px;
+  padding: 0;
+}
+
+.ip-content {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.form-wrapper {
+  max-width: 600px;
+  position: relative;
+}
+
+.error-display {
+  top:3.5rem;
+  width: 50%;
+}
+
+.d-flex {
+  gap: 1em;
+}
+.form-wrapper > form {
+  gap: 1em;
+}
+
+.map-container {
+  width: 100%;
+  min-height: calc(100vh - var(--app-header-height));
+  position: relative;
+  margin-bottom: 0;
+ 
+}
+@media only screen and (max-width: 600px) {
+
+  .ip-details {
+    position: relative;
+    top: 0;
+    margin: 1em 0;
+  }
+  .map-container {
+    min-height: 45vh;
+  }
+
+  .form-wrapper {
+    padding:  1em;
+  }
+  .app-header {
+    min-height: 25vh;
+  }
+  .card {
+    box-shadow: none !important;
+    border: none;
+  }
+  .card-column {
+    border: none !important;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
