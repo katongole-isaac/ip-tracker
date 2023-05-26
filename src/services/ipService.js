@@ -1,7 +1,8 @@
 /**
  * IP Service - Provides Info about IP address
  *
- */
+*/
+
 
 const ipApiUrl = "http://ip-api.com/json/";
 
@@ -33,3 +34,6 @@ export async function ipInfo(ip) {
     errors,
   };
 }
+
+
+
