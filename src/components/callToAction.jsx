@@ -8,10 +8,10 @@ const CallToAction = () => {
   return (
     <React.Fragment>
       <div
-        className="container-fluid fixed-top call-to-action"
-        style={{
-          height: 22,
-        }}
+        className="container-fluid  call-to-action"
+        // style={{
+        //   height: 22,
+        // }}
       >
         <div className="container text-center ">
           <p
